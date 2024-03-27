@@ -1,0 +1,13 @@
+base_model: mhenrichsen/gemma-7b
+gate_mode: random
+dtype: bfloat16
+experts_per_token: 2
+experts:
+- source_model: Crystalcareai/gemma-codefeedback
+  positive_prompts: []
+- source_model: Crystalcareai/Gemma-Generic
+  positive_prompts: []
+- source_model: Crystalcareai/Gemma-COT
+  positive_prompts: []
+- source_model: Crystalcareai/gemma-orca
+  positive_prompts: []
